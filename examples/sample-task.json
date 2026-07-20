@@ -1,0 +1,9 @@
+{
+  "task_id": "kairos-demo-001",
+  "created_at": "2026-07-20T08:00:00Z",
+  "requester": "demo-user",
+  "summary": "Draft a grant application response using public company information only.",
+  "data_sensitivity": "internal",
+  "intended_action": "draft",
+  "requires_attachment": false
+}
