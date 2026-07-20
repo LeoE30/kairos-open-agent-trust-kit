@@ -1,0 +1,20 @@
+{
+  "name": "kairos-open-agent-trust-kit",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Open schemas and a minimal local demo for human-reviewed AI agent trust workflows.",
+  "type": "module",
+  "scripts": {
+    "demo": "node src/demo.js examples/sample-task.json",
+    "validate": "node src/demo.js examples/sample-task.json"
+  },
+  "keywords": [
+    "ai-agents",
+    "agent-governance",
+    "local-first",
+    "evidence",
+    "auditability",
+    "human-approval"
+  ],
+  "license": "MIT"
+}
