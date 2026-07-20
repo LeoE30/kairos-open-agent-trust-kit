@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://forneus.io/schemas/kairos/risk-classification.schema.json",
+  "title": "KAIROS Risk Classification",
+  "type": "object",
+  "required": ["task_id", "risk_level", "approval_required", "reasons"],
+  "properties": {
+    "task_id": {
+      "type": "string"
+    },
+    "risk_level": {
+      "type": "string",
+      "enum": ["low", "medium", "high"]
+    },
+    "approval_required": {
+      "type": "boolean"
+    },
+    "reasons": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}
