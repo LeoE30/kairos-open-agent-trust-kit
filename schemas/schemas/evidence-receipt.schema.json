@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://forneus.io/schemas/kairos/evidence-receipt.schema.json",
+  "title": "KAIROS Evidence Receipt",
+  "type": "object",
+  "required": [
+    "receipt_id",
+    "task_id",
+    "issued_at",
+    "risk_level",
+    "approval_state",
+    "privacy_boundary",
+    "content_hash"
+  ],
+  "properties": {
+    "receipt_id": {
+      "type": "string"
+    },
+    "task_id": {
+      "type": "string"
+    },
+    "issued_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "risk_level": {
+      "type": "string",
+      "enum": ["low", "medium", "high"]
+    },
+    "approval_state": {
+      "type": "string",
+      "enum": ["not_required", "pending_human_review", "approved", "rejected"]
+    },
+    "privacy_boundary": {
+      "type": "string",
+      "enum": ["local_only", "redacted_export", "public_export"]
+    },
+    "content_hash": {
+      "type": "string",
+      "description": "SHA-256 hash of the canonical local event payload."
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}
